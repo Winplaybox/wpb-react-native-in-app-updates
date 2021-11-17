@@ -1,6 +1,6 @@
 # wpb-react-native-in-app-updates
 
-![In app update example](https://user-images.githubusercontent.com/8539174/88419625-6db0ef00-cddd-11ea-814e-389db852368b.gif)
+![In app update example](https://raw.githubusercontent.com/Winplaybox/wpb-react-native-in-app-updates/master/example.gif)
 
 ## Getting started
 
@@ -64,7 +64,7 @@ inAppUpdates.checkNeedsUpdate({ curVersion: '0.0.8' }).then((result) => {
         updateType: IAUUpdateKind.FLEXIBLE,
       };
     }
-    inAppUpdates.startUpdate(updateOptions); // https://github.com/SudoPlz/wpb-react-native-in-app-updates/blob/master/src/types.ts#L78
+    inAppUpdates.startUpdate(updateOptions); // https://github.com/winplaybox/wpb-react-native-in-app-updates/blob/master/src/types.ts#L78
   }
 });
 ```
@@ -106,7 +106,7 @@ Where:
 
 | Option | Type  | Description  |
 |---|---|---|
-| updateType (Android ONLY) | (required on Android) [IAUUpdateKind](https://github.com/SudoPlz/wpb-react-native-in-app-updates/blob/master/src/types.ts#L78) | Either `IAUUpdateKind.FLEXIBLE` or `IAUUpdateKind.IMMEDIATE`. This uses play-core below the hood, read more [here](https://developer.android.com/guide/playcore/in-app-updates) about the two modes. |
+| updateType (Android ONLY) | (required on Android) [IAUUpdateKind](https://github.com/winplaybox/wpb-react-native-in-app-updates/blob/master/src/types.ts#L78) | Either `IAUUpdateKind.FLEXIBLE` or `IAUUpdateKind.IMMEDIATE`. This uses play-core below the hood, read more [here](https://developer.android.com/guide/playcore/in-app-updates) about the two modes. |
 |  title (iOS only) | (optional) String  |  The title of the alert prompt when there's a new version. (default: `Update Available`) |
 |  message (iOS only) | (optional) String  |  The content of the alert prompt when there's a new version (default: `There is an updated version available on the App Store. Would you like to upgrade?`)|
 |  buttonUpgradeText (iOS only) | (optional) String  |  The text of the confirmation button on the alert prompt (default: `Upgrade `)|
@@ -128,7 +128,7 @@ Where: `StatusUpdateEvent`
 
 | Option | Type  | Description  |
 |---|---|---|
-|  status | [AndroidInstallStatus](https://github.com/SudoPlz/wpb-react-native-in-app-updates/blob/master/src/types.ts#L1) | The status of the installation (https://developer.android.com/reference/com/google/android/play/core/install/model/InstallStatus) |
+|  status | [AndroidInstallStatus](https://github.com/winplaybox/wpb-react-native-in-app-updates/blob/master/src/types.ts#L1) | The status of the installation (https://developer.android.com/reference/com/google/android/play/core/install/model/InstallStatus) |
 |  bytesDownloaded | int | How many bytes were already downloaded |
 |  totalBytesToDownload | int | The total amount of bytes in the update |
 
@@ -141,7 +141,7 @@ Removes an existing download status listener.
 <br>
 
 ## Example:
-[Example project](https://github.com/SudoPlz/wpb-react-native-in-app-updates/blob/v1/Example/App.tsx#L38)
+[Example project](https://github.com/winplaybox/wpb-react-native-in-app-updates/blob/v1/Example/App.tsx#L38)
 <br>
 <br>
 
@@ -203,7 +203,7 @@ This library is offered as is, if you'd like to change something please open a P
 
 ## Changelog
 
-Read the [CHANGELOG.md](https://github.com/SudoPlz/wpb-react-native-in-app-updates/blob/master/CHANGELOG.md) file
+Read the [CHANGELOG.md](https://github.com/winplaybox/wpb-react-native-in-app-updates/blob/master/CHANGELOG.md) file
 
 ## License
 MIT
